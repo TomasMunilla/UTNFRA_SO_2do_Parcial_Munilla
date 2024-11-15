@@ -1,0 +1,3 @@
+IP: VMSegundoParcial
+Distribucion: Ubuntu
+cantidad de cores: 2

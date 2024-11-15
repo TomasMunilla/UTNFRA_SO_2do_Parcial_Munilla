@@ -1,0 +1,157 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-14 21:45:24,791 p=13686 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-14 21:45:24,794 p=13686 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-14 21:45:24,898 p=13686 u=root n=ansible | PLAY [Generar archivos de datos y crear directorios] *****************************************************************************
+2024-11-14 21:45:24,898 p=13686 u=root n=ansible | skipping: no hosts matched
+2024-11-14 21:45:24,898 p=13686 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2024-11-14 21:54:56,528 p=13732 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-14 21:54:56,531 p=13732 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-14 21:54:56,637 p=13732 u=root n=ansible | PLAY [Tarea del colegio] *********************************************************************************************************
+2024-11-14 21:54:56,637 p=13732 u=root n=ansible | skipping: no hosts matched
+2024-11-14 21:54:56,637 p=13732 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2024-11-14 21:57:01,054 p=13740 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-14 21:57:01,056 p=13740 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-14 21:57:01,167 p=13740 u=root n=ansible | PLAY [Tarea del colegio] *********************************************************************************************************
+2024-11-14 21:57:01,168 p=13740 u=root n=ansible | skipping: no hosts matched
+2024-11-14 21:57:01,168 p=13740 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2024-11-14 22:03:34,274 p=13754 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-14 22:03:34,276 p=13754 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-14 22:03:34,382 p=13754 u=root n=ansible | PLAY [Tarea del colegio] *********************************************************************************************************
+2024-11-14 22:03:34,382 p=13754 u=root n=ansible | skipping: no hosts matched
+2024-11-14 22:03:34,383 p=13754 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2024-11-14 22:10:55,412 p=13805 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-14 22:10:55,414 p=13805 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-14 22:10:55,491 p=13805 u=root n=ansible | ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleMapping'> instead
+
+The error appears to be in '/home/repogit/UTN-FRA_SO_Examenes/202406/ansible/playbook.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+  hosts: all
+  ^ here
+
+2024-11-14 22:11:32,417 p=13813 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-14 22:11:32,419 p=13813 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-14 22:11:32,496 p=13813 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/repogit/UTN-FRA_SO_Examenes/202406/ansible/playbook.yml': line 2, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+--
+- hosts: all
+       ^ here
+
+2024-11-14 22:12:13,362 p=13820 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-14 22:12:13,365 p=13820 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-14 22:12:13,442 p=13820 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/repogit/UTN-FRA_SO_Examenes/202406/ansible/playbook.yml': line 2, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+--
+ hosts:
+      ^ here
+
+2024-11-14 22:18:31,913 p=13839 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-14 22:18:31,915 p=13839 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-14 22:18:32,016 p=13839 u=root n=ansible | PLAY [Crear archivos de datos] ***************************************************************************************************
+2024-11-14 22:18:32,016 p=13839 u=root n=ansible | skipping: no hosts matched
+2024-11-14 22:18:32,016 p=13839 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2024-11-14 22:21:41,103 p=13858 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-14 22:21:41,207 p=13858 u=root n=ansible | PLAY [Crear archivos de datos] ***************************************************************************************************
+2024-11-14 22:21:41,221 p=13858 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2024-11-14 22:21:41,320 p=13858 u=root n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nroot@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-14 22:21:42,136 p=13858 u=root n=ansible | ok: [localhost]
+2024-11-14 22:21:42,146 p=13858 u=root n=ansible | TASK [Crear el directorio de alumnos] ********************************************************************************************
+2024-11-14 22:21:42,382 p=13858 u=root n=ansible | changed: [localhost]
+2024-11-14 22:21:42,387 p=13858 u=root n=ansible | TASK [Crear el directorio de equipos] ********************************************************************************************
+2024-11-14 22:21:42,527 p=13858 u=root n=ansible | changed: [localhost]
+2024-11-14 22:21:42,533 p=13858 u=root n=ansible | TASK [Crear el archivo datos_alumno.txt] *****************************************************************************************
+2024-11-14 22:21:42,981 p=13858 u=root n=ansible | changed: [localhost]
+2024-11-14 22:21:42,987 p=13858 u=root n=ansible | TASK [Crear el archivo datos_equipo.txt] *****************************************************************************************
+2024-11-14 22:21:43,258 p=13858 u=root n=ansible | changed: [localhost]
+2024-11-14 22:21:43,281 p=13858 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2024-11-14 22:21:43,282 p=13858 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-14 22:21:43,282 p=13858 u=root n=ansible | localhost                  : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-14 22:28:22,251 p=14121 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-14 22:28:22,332 p=14121 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/repogit/UTN-FRA_SO_Examenes/202406/ansible/playbook.yml': line 26, column 27, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        dest: "/home/repogit/UTN-FRA_SO_Examenes/202406/ansible/tmp/2do_parcial/equipo/datos_equipo.txt"
+    - name: 2PSupervisores: sudo sin password
+                          ^ here
+
+2024-11-14 22:29:17,946 p=14129 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-14 22:29:18,057 p=14129 u=root n=ansible | PLAY [Crear archivos de datos] ***************************************************************************************************
+2024-11-14 22:29:18,064 p=14129 u=root n=ansible | TASK [Gathering Facts] ***********************************************************************************************************
+2024-11-14 22:29:18,152 p=14129 u=root n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nroot@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-14 22:29:18,893 p=14129 u=root n=ansible | ok: [localhost]
+2024-11-14 22:29:18,903 p=14129 u=root n=ansible | TASK [Crear el directorio de alumnos] ********************************************************************************************
+2024-11-14 22:29:19,134 p=14129 u=root n=ansible | ok: [localhost]
+2024-11-14 22:29:19,139 p=14129 u=root n=ansible | TASK [Crear el directorio de equipos] ********************************************************************************************
+2024-11-14 22:29:19,282 p=14129 u=root n=ansible | ok: [localhost]
+2024-11-14 22:29:19,288 p=14129 u=root n=ansible | TASK [Crear el archivo datos_alumno.txt] *****************************************************************************************
+2024-11-14 22:29:19,761 p=14129 u=root n=ansible | ok: [localhost]
+2024-11-14 22:29:19,767 p=14129 u=root n=ansible | TASK [Crear el archivo datos_equipo.txt] *****************************************************************************************
+2024-11-14 22:29:20,039 p=14129 u=root n=ansible | ok: [localhost]
+2024-11-14 22:29:20,045 p=14129 u=root n=ansible | TASK [Configurar sudo sin contraseña para 2PSupervisores] ************************************************************************
+2024-11-14 22:29:20,284 p=14129 u=root n=ansible | changed: [localhost]
+2024-11-14 22:29:20,293 p=14129 u=root n=ansible | PLAY RECAP ***********************************************************************************************************************
+2024-11-14 22:29:20,294 p=14129 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-14 22:29:20,294 p=14129 u=root n=ansible | localhost                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
